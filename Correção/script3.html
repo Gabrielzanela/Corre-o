@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let Inimigo = {
+    nome: "Orochimaru",
+    vivo: true,
+    atirarShuriken: function() {
+      console.log(`${this.nome} foi atingido por uma shuriken!`);
+      this.vivo = false;
+    }
+  }
+  
+  let inimigo1 = Object.create(Inimigo);
+  inimigo1.nome = "Orochimaru";
+  console.log(inimigo1.vivo); 
+  inimigo1.atirarShuriken(); 
+  console.log(inimigo1.vivo); 
+  </script> 
+</body>
+</html>
